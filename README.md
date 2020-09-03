@@ -1,1 +1,1 @@
-# projeto-maven
+# Java Persistence API (JPA)

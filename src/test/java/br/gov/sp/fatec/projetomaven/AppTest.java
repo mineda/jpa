@@ -1,7 +1,7 @@
 package br.gov.sp.fatec.projetomaven;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 /**
  * Unit test for simple App.
