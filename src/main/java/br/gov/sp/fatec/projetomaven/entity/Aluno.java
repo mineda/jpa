@@ -9,6 +9,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Table(name = "alu_aluno")
 @Entity
 @PrimaryKeyJoinColumn(name = "alu_id")
@@ -17,6 +19,7 @@ public class Aluno extends Usuario {
     @Column(name = "alu_ra")
     private Long ra;
 
+    @JsonIgnore
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "alunos")
     private Set<Trabalho> trabalhos;
 
